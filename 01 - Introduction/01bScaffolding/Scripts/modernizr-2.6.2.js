@@ -616,7 +616,6 @@ window.Modernizr = (function( window, document, undefined ) {
         // Browsers that actually have CSS Opacity implemented have done so
         //  according to spec, which means their return values are within the
         //  range of [0.0,1.0] - including the leading zero.
-
         setCssAll('opacity:.55');
 
         // The non-literal . in this regex is intentional:
@@ -628,7 +627,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     // Note, Android < 4 will pass this test, but can only animate
     //   a single property at a time
-    //   daneden.me/2011/12/putting-up-with-androids-bullshit/
+   
     tests['cssanimations'] = function() {
         return testPropsAll('animationName');
     };
